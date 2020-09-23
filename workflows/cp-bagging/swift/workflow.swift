@@ -38,7 +38,7 @@ string results[];
 // Evaluate each parameter set
 foreach params,i in bagging_lines
 {
-  foreach bs in [ 0 : n_bootstrap ]
+  foreach bs in [ 0 : n_bootstrap - 1 ]
   {
     printf("params: %s", params);
     printf("bootstrap: %d", bs);
